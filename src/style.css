@@ -25,6 +25,10 @@ button {
   top: -30px;
   width: 40%;
 }
+#repository-link {
+  text-decoration: none;
+  margin-left: 40px;
+}
 .markers {
   font-size: medium;
   vertical-align: top;
