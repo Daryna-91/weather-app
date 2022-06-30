@@ -64,14 +64,15 @@ enterCity.addEventListener("submit", form);
 let currentTemperature = document.querySelector("#currentTemp");
 function tempCelsius(event) {
   event.preventDefault();
-  currentTemperature.innerHTML = "28";
+  currentTemperature.innerHTML = celsiusTemp;
 }
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", tempCelsius);
 
 function tempFahrenheit(event) {
   event.preventDefault();
-  currentTemperature.innerHTML = "82.4";
+  let tempFahrenheit = (celsiusTemp * 9) / 5 + 32;
+  currentTemperature.innerHTML = Math.round(tempFahrenheit);
 }
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", tempFahrenheit);
@@ -82,6 +83,7 @@ function showTemperature(response) {
   console.log(response);
   cityName.innerHTML = response.data.name;
   currentTemperature.innerHTML = temperature;
+  celsiusTemp = temperature;
   let weatherSky = document.querySelector("#sky");
   let incomingString = response.data.weather[0].description;
   let capitalString =
