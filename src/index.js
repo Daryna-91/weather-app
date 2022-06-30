@@ -91,6 +91,11 @@ function showTemperature(response) {
   humidity.innerHTML = response.data.main.humidity;
   let wind = document.querySelector("#wind");
   wind.innerHTML = Math.round(response.data.wind.speed);
+  let mainIcon = document.querySelector("#main-icon");
+  mainIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";

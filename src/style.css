@@ -27,7 +27,12 @@ button {
 }
 #repository-link {
   text-decoration: none;
-  margin-left: 110px;
+  margin-left: 14%;
+  margin-top: 5px;
+}
+.weather-app-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .markers {
   font-size: medium;
@@ -50,7 +55,7 @@ button {
 }
 .card-1 {
   margin-bottom: 30px;
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/poster.jpg);
   border-radius: 20px;
   box-shadow: 6px 3px 3px rgb(33, 26, 58);
 }
@@ -59,7 +64,7 @@ button {
   background-color: rgb(216, 217, 221);
 }
 
-.main-icon {
+#main-icon {
   position: relative;
   left: 10%;
   top: 10%;
