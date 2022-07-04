@@ -47,12 +47,12 @@ button {
 .card {
   margin-bottom: 30px;
   border-color: transparent;
-  background-color: rgb(230, 231, 235);
+  background-color: #adb2bc;
   transition: 200ms ease-in-out;
   box-shadow: 6px 3px 3px rgb(33, 26, 58);
 }
 .card:hover {
-  background-color: rgb(206, 191, 236);
+  background-color: #8eaab7;
 }
 .card-1 {
   margin-bottom: 30px;
